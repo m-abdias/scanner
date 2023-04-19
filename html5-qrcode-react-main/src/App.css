@@ -14,7 +14,7 @@
 }
 
 .App-section {
-    background-color: #282c34;
+    background-color: #EC691B;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -42,15 +42,19 @@
 }
 
 #html5qr-code-full-region {
-    background-color: #adb5bd;
+    background-color: #fff;
     color: #282c34;
     font-size: 12pt;
+    border-radius: 3%;
 }
 
 
 @media(max-width: 640px) {
     #html5qr-code-full-region {
         width: 300px;
+    }
+    .Result-container {
+        min-width: 300px !important;
     }
 }
 
@@ -64,7 +68,7 @@
     min-width: 600px;
     margin: auto;
     display: block;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -116,5 +120,5 @@ tbody td:hover:before {
 }
 
 a {
-    color: white
+    color: #0d6efd;
 }
