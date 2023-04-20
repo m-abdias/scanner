@@ -20,7 +20,7 @@ const ResultContainer = (results) => {
     <div>
 
             {results.data[0] === undefined ? (
-              <div >
+              <div>
               </div>
             ) : results.data[0] === "ABC-abc-1234" ? (
               <div class="alert alert-success" role="alert">
