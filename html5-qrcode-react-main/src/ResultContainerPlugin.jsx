@@ -18,20 +18,18 @@ function filterResults(results) {
 const ResultContainer = (results) => {
   return (
     <div>
-
-            {results.data[0] === undefined ? (
-              <div>
-              </div>
-            ) : results.data[0] === "ABC-abc-1234" ? (
-              <div class="alert alert-success" role="alert">
-                Produto comercializado pela DL.
-              </div>
-            ) : (
-              <div class="alert alert-danger" role="alert">
-                Produto não comercializado pela DL.
-              </div>
-            )}
-          
+      <h1>{results.data[0]}</h1>
+      {results.data[0] === undefined ? (
+        <div></div>
+      ) : results.data[0] === "ABC-abc-1234" ? (
+        <div class="alert alert-success" role="alert">
+          Produto comercializado pela DL.
+        </div>
+      ) : (
+        <div class="alert alert-danger" role="alert">
+          Produto não comercializado pela DL.
+        </div>
+      )}
     </div>
   );
 };
