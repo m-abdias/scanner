@@ -48,16 +48,26 @@
     border-radius: 3%;
 }
 
+#html5qr-code-full-region > div:first-child > img:first-child {
+    display: none;
+}
+
 #html5qr-code-full-region__dashboard_section_swaplink {
     display: none !important;
 }
 
-#html5qr-code-full-region__header_message {
+#html5qr-code-full-region__header_message{
+    font-size: 0 !important;
+}
+
+#html5qr-code-full-region__header_message::after {
     background: rgb(236, 105, 27) !important;
     border: 0px !important;
     color: white !important;
     border-radius: 3px !important;
     padding: 0.5rem 1rem !important;
+    font-size: 16px;
+    content: 'Solicitando permissões de câmera...';
 }
 
 #html5qr-code-full-region__dashboard_section_csr button {
@@ -66,6 +76,48 @@
     color: white !important;
     border-radius: 3px !important;
     padding: 0.5rem 1rem !important;
+}
+
+#html5qr-code-full-region__dashboard_section_csr {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+#html5qr-code-full-region__camera_selection {
+    background: rgb(236, 105, 27) !important;
+    border: 0px !important;
+    color: white !important;
+    border-radius: 3px !important;
+}
+
+#html5qr-code-full-region__dashboard_section_csr > span > button:first-child {
+    font-size: 0;
+}
+
+#html5qr-code-full-region__dashboard_section_csr > span> button:first-child::after {
+    content: 'Iniciar Digitalização';
+    font-size: 16px;
+}
+
+#html5qr-code-full-region__dashboard_section_csr > span > button:last-child {
+    font-size: 0;
+}
+
+#html5qr-code-full-region__dashboard_section_csr > span> button:last-child::after {
+    content: 'Parar Digitalização';
+    font-size: 16px;
+}
+
+
+#html5qr-code-full-region__dashboard_section_csr > div > button:first-child {
+    font-size: 0;
+}
+
+#html5qr-code-full-region__dashboard_section_csr > div > button:last-child::after {
+    content: 'Solicitar Permissões de Câmera';
+    font-size: 16px;
 }
 
 @media(max-width: 640px) {
