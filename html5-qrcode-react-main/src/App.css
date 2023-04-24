@@ -48,8 +48,8 @@
     border-radius: 3%;
 }
 
-#html5qr-code-full-region > div:first-child > img:first-child {
-    display: none;
+#html5qr-code-full-region > div:first-child > div:first-child {
+    display: none !important;
 }
 
 #html5qr-code-full-region__dashboard_section_swaplink {
@@ -83,6 +83,10 @@
     flex-direction: column !important;
     align-items: center !important;
     gap: 10px !important;
+}
+
+#html5qr-code-full-region__dashboard_section_csr > select {
+    display: none !important;
 }
 
 #html5qr-code-full-region__camera_selection {
